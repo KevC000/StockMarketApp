@@ -7,9 +7,9 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
-import com.yonasoft.stockmarketapp.presentation.company_listings.NavGraphs
-import com.yonasoft.stockmarketapp.ui.theme.StockMarketAppTheme
 import com.ramcosta.composedestinations.DestinationsNavHost
+import com.yonasoft.stockmarketapp.presentation.NavGraphs
+import com.yonasoft.stockmarketapp.ui.theme.StockMarketAppTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

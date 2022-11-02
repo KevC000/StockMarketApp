@@ -2,8 +2,10 @@ package com.yonasoft.stockmarketapp.di
 
 import com.yonasoft.stockmarketapp.data.csv.CSVParser
 import com.yonasoft.stockmarketapp.data.csv.CompanyListingsParser
+import com.yonasoft.stockmarketapp.data.csv.IntradayInfoParser
 import com.yonasoft.stockmarketapp.data.repository.StockRepositoryImpl
 import com.yonasoft.stockmarketapp.domain.model.CompanyListing
+import com.yonasoft.stockmarketapp.domain.model.IntradayInfo
 import com.yonasoft.stockmarketapp.domain.repository.StockRepository
 import dagger.Binds
 import dagger.Module
@@ -20,6 +22,12 @@ abstract class RepositoryModule {
     abstract fun bindCompanyListingsParser(
         companyListingsParser: CompanyListingsParser
     ): CSVParser<CompanyListing>
+
+    @Binds
+    @Singleton
+    abstract fun bindIntradayInfoParser(
+        IntradayInfoParser: IntradayInfoParser
+    ): CSVParser<IntradayInfo>
 
     @Binds
     @Singleton
